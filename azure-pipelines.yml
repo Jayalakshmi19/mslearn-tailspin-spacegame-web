@@ -43,8 +43,8 @@ steps:
     displayName: 'Build the projecr - Release'
     inputs:
       command: 'build'
-    arguments: '--no-restore --configuration Release'
-    projects: '**/*.csproj'
+      arguments: '--no-restore --configuration Release'
+      projects: '**/*.csproj'
 
   - task: DotNetCoreCLI@2
     displayName: 'Publish the project - Release'
